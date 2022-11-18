@@ -1,0 +1,45 @@
+#Name:Mahim Ali
+#Email:mahim.ali32@myhunter.cuny.edu
+#Date:November 18,2022
+#This program corrects errors
+
+
+def printCities(cityList):
+  print("Eight biggest cities in the USA: ")
+  for city in cityList:
+    print(city)
+  
+
+def inList(cityList, myCity):    
+    
+    for city in cityList:
+      if city == myCity:
+        print(myCity + " is in the list of cities.")
+        break;
+    
+    else:
+      print(myCity + " is not in the list of cities.")
+
+    return city
+  
+def numCities(cityList):
+  num = len(cityList)
+  print("There are " + str(num) + " cities in the list.")
+
+
+def main():
+  
+    cityList = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix", "Philadelphia", "San Antonio", "San Diego"]  
+    printCities(cityList)
+    print(" ")
+  
+    inList(cityList, "New York")
+    inList(cityList, "Los Angeles")          
+    inList(cityList, "Washington DC")
+    inList(cityList, "Seattle")
+    
+    numCities(cityList)
+
+    
+if __name__ == "__main__":
+    main()
